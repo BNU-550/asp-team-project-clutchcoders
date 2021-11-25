@@ -9,7 +9,7 @@ namespace ClutchCodersWebApp.Models
     public class PaymentCard
     {
         [Key]
-        public int Id { get; set; }
+        public int CardNumber { get; set; }
 
         [Required, StringLength(30)]
         public string NameOnCard { get; set; }
