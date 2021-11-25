@@ -10,17 +10,16 @@ namespace ClutchCodersWebApp.Models
     {
         [Key]
         public int Id { get; set; }
-
-        public string Name { get; set; }
-        [StringLength(10)]
+        
+        [Required, StringLength(25)]
         public string PhoneNo { get; set; }
-
+        [Required, StringLength(30)]
         public string Email { get; set; }
-
+        [Required]
         public Boolean IsEmployee { get; set; }
-
+        [Required, StringLength(20)]
         public string FirstName { get; set; }
-
+        [Required, StringLength(20)]
         public string LastName { get; set; }
 
     }
