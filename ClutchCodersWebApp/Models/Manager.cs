@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClutchCodersWebApp.Models
 {
+    public enum Roles
+    {
+        Manager, Admin, Customer
+    }
     public class Manager
     {
         [Key]

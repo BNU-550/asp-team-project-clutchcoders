@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ClutchCodersWebApp.Models
 {
+
     public class Customer
     {
         [Key]
