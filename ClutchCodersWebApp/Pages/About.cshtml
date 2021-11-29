@@ -1,25 +1,34 @@
 ﻿@page
 @model PrivacyModel
+@section Styles{
+     <link rel="stylesheet" href="~/css/main.css" />
+     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+}
 @{
     ViewData["Title"] = "About us";
 }
 
+<div class = "main">
     <h1>@ViewData["Title"]</h1>
 
+   <div>
+    <p>This is web application was developed by:</p>
+    <p>Kate Turton | Project Manager</p>
+    <p>Matthew Driver | Lead Programmer</p>
+    <p class="vinny">Vincent Assolutissimamente | Head Critical Lead Designer</p>
+   </div>
 
-<div>
-<p>This is web application was developed by:</p>
-<p>Kate Turton | Project Manager</p>
-<p>Matthew Driver | Lead Programmer</p>
-<p class="vinny">Vincent Assolutissimamente | Head Critical Lead Designer</p>
-
-<!-- ATTEMPTING TO DO A COOL LITTLE CARD FLIP THING
-    SOMTHING TO DO WITH THE CSS ISNT WORKING, LIKE ITS NOT LINKING PROPERLY
--->
-</div>
+    <div class ="cardHolder">
 
     <div class = "card" >
     	<img src="Images\Frontpic1.jpg" alt="Card Back" height ="150" width = "100">
         <img src="Images\Vinnypic1.jpg" class="img-top" alt="Card Front" height ="150" width = "100">
     </div>
 
+    <div class = "card" >
+   	    <img src="Images\Frontpic1.jpg" alt="Card Back" height ="150" width = "100">
+        <img src="Images\Matt1.jpg" class="img-top" alt="Card Front" height ="150" width = "100">
+    </div>
+    </div>
+
+</div>
