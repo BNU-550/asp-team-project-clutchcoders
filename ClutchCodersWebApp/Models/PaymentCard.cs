@@ -11,12 +11,19 @@ namespace ClutchCodersWebApp.Models
         [Key]
         public int CardNumber { get; set; }
 
+
         [Required, StringLength(30)]
         public string NameOnCard { get; set; }
+
+
         [Required]
         public int ExpiryDate { get; set; }
+
+
         [Required]
         public string SecurityCode { get; set; }
+
+
         //
         // PERSONID MAYBE REMOVE
         //

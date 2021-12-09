@@ -11,14 +11,23 @@ namespace ClutchCodersWebApp.Models
         [Key]
         public int Id { get; set; }
 
+
         [Required, StringLength(50)]
         public string FirstLine { get; set; }
+
+
         [Required, StringLength(50)]
         public string SecondLine { get; set; }
+
+
         [Required]
         public int CustomerId { get; set; }
+
+
         [Required, StringLength(10)]
         public string Postcode { get; set; }
+
+
         //
         // PERSONID MAYBE REMOVE
         //

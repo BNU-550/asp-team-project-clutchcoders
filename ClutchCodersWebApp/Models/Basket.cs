@@ -11,8 +11,11 @@ namespace ClutchCodersWebApp.Models
         [Key]
         public int Id { get; set; }
 
+
         [Required, StringLength(10)]
         public string OrderDate { get; set; }
+
+
         [Required, StringLength(10)]
         public string DeliveryDate { get; set; }
 
