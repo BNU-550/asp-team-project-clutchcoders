@@ -11,10 +11,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
+    <None Include="wwwroot\Images\Frontpic1.jpg" />
+    <None Include="wwwroot\Images\Matt1.jpg" />
+    <None Include="wwwroot\Images\Vinnypic1.jpg" />
   </ItemGroup>
 
 </Project>
