@@ -12,12 +12,12 @@ namespace ClutchCodersWebApp.Models
         public int Id { get; set; }
 
 
-        [Required, StringLength(10)]
-        public string OrderDate { get; set; }
+        [Required]
+        public DateTime OrderDate { get; set; }
 
 
-        [Required, StringLength(10)]
-        public string DeliveryDate { get; set; }
+        [Required]
+        public DateTime DeliveryDate { get; set; }
 
     }
 }
