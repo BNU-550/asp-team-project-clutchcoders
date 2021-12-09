@@ -9,6 +9,10 @@ namespace ClutchCodersWebApp.Models
     public class PaymentCard
     {
         [Key]
+        public int CardId { get; set; }
+
+
+        [Required]
         public int CardNumber { get; set; }
 
 
@@ -17,7 +21,7 @@ namespace ClutchCodersWebApp.Models
 
 
         [Required]
-        public int ExpiryDate { get; set; }
+        public DateTime ExpiryDate { get; set; }
 
 
         [Required]
