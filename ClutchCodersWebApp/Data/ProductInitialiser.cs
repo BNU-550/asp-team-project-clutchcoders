@@ -29,12 +29,48 @@ namespace ClutchCodersWebApp.Data
             {
                 new Product()
                 {
-                    Name = "First Motomoto",
                     Id = 1,
-                 
-                    
-                 
-                }
+                    Name = "First Motomoto",
+                    ModelNo = 001,
+                    EngineSize = "500cc",
+                    Type = "Sport",
+                    Brand = "BMW",
+                    FuelType = "Petrol",
+                    FuelCapacity = "3L",
+                    Dimensions = "1m",
+                    Year = 2009,
+                    Price = 1000,
+                    Images = new List<Image>()
+                    {
+                        new Image()
+                        {
+                            Id =1,
+                            Name = "bmwM1000RRImage1.jfif",
+                            Category = 1
+                        },
+                         new Image()
+                        {
+                            Id =2,
+                            Name = "bmwM1000RRImage2.jfif",
+                            Category = 2
+                        },
+                          new Image()
+                        {
+                            Id =3,
+                            Name = "bmwM1000RRImage3.jfif",
+                            Category = 3
+                        },
+                           new Image()
+                        {
+                            Id =4,
+                            Name = "bmwM1000RRImage4.jfif",
+                            Category = 4
+                        }
+                    }  
+                },
+
+
+
             };
 
             foreach (Product a in products)
