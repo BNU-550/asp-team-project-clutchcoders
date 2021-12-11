@@ -19,6 +19,119 @@ namespace ClutchCodersWebApp.Data
         //TODO: Add 10 people and 2 staff
         //TODO: Add 12 addresses
         //TODO: Add call initialise method in the program class
+
+        private static void AddPeople(ApplicationDbContext context)
+        {
+            if (context.People.Any())
+            {
+                return;
+            }
+
+            var people = new Person[]
+            {
+                new Person()
+                {
+                    PhoneNo = "07284 492974",
+                    Email = "davesmith1@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Dave",
+                    LastName = "Smith"
+                },
+                new Person()
+                {
+                    PhoneNo = "07348 568247",
+                    Email = "johnwalker2@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "John",
+                    LastName = "Walker"
+                },
+                new Person()
+                {
+                    PhoneNo = "07572 429742",
+                    Email = "grahamfanta3@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Graham",
+                    LastName = "Fanta"
+                },
+                new Person()
+                {
+                    PhoneNo = "07863 759321",
+                    Email = "sharoncase4@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Sharon",
+                    LastName = "Case"
+                },
+                new Person()
+                {
+                    PhoneNo = "07181 292844",
+                    Email = "annabecker5@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Anna",
+                    LastName = "Becker"
+                },
+                new Person()
+                {
+                    PhoneNo = "08273 447927",
+                    Email = "jakeprice6@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Jake",
+                    LastName = "Price"
+                },
+                new Person()
+                {
+                    PhoneNo = "04762 852794",
+                    Email = "vinnythread7@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Vinny",
+                    LastName = "Thread"
+                },
+                new Person()
+                {
+                    PhoneNo = "01849 759270",
+                    Email = "mattdriver8@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Matt",
+                    LastName = "Driver"
+                },
+                new Person()
+                {
+                    PhoneNo = "04772 179482",
+                    Email = "kateturton9@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Kate",
+                    LastName = "Turton"
+                },
+                new Person()
+                {
+                    PhoneNo = "01874 653874",
+                    Email = "sarahwalker0@gmail.com",
+                    IsEmployee = false,
+                    FirstName = "Sarah",
+                    LastName = "Walker"
+                },
+                new Person()
+                {
+                    PhoneNo = "04728 154733",
+                    Email = "harveystones@gmail.com",
+                    IsEmployee = true,
+                    FirstName = "Harvey",
+                    LastName = "Stone"
+                },
+                new Person()
+                {
+                    PhoneNo = "04726 957826",
+                    Email = "corymuggles@gmail.com",
+                    IsEmployee = true,
+                    FirstName = "Cory",
+                    LastName = "Muggle"
+                },
+            };
+            foreach (Person a in people)
+            {
+                context.People.Add(a);
+            }
+        }
+
         private static void AddPaymentCards(ApplicationDbContext context)
         {
             if (context.PaymentCards.Any())
