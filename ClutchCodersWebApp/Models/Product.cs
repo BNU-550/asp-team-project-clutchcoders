@@ -45,10 +45,12 @@ namespace ClutchCodersWebApp.Models
 
 
         [Required]
+        [Range(1900, 2025)]
         public int Year { get; set; }
 
 
         [Required]
+        [Range(0, 50000)]
         public decimal Price { get; set; }
 
         //Navigation property
