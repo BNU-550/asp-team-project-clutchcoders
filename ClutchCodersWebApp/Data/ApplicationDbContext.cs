@@ -13,8 +13,8 @@ namespace ClutchCodersWebApp.Data
             : base(options)
         {
         }
-        DbSet<Address> Addresses { get; set; }
-        DbSet<PaymentCard> PaymentCards { get; set; }
-        DbSet<Person> People { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<PaymentCard> PaymentCards { get; set; }
+        public DbSet<Person> People { get; set; }
     }
 }
