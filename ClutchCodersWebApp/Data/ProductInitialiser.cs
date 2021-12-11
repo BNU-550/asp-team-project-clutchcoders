@@ -30,8 +30,7 @@ namespace ClutchCodersWebApp.Data
                 new Product()
                 {
                     Id = 1,
-                    Name = "First Motomoto",
-                    ModelNo = 001,
+                    Name = "M 1000 RR",
                     EngineSize = "500cc",
                     Type = "Sport",
                     Brand = "BMW",
@@ -39,7 +38,7 @@ namespace ClutchCodersWebApp.Data
                     FuelCapacity = "3L",
                     Dimensions = "1m",
                     Year = 2009,
-                    Price = 1000,
+                    Price = 30000,
                     Images = new List<Image>()
                     {
                         new Image()
@@ -68,7 +67,46 @@ namespace ClutchCodersWebApp.Data
                         }
                     }  
                 },
-
+                new Product()
+                {
+                    Id = 2,
+                    Name = "R 18 B",
+                    EngineSize = "500cc",
+                    Type = "Sport",
+                    Brand = "BMW",
+                    FuelType = "Petrol",
+                    FuelCapacity = "3L",
+                    Dimensions = "1m",
+                    Year = 2009,
+                    Price = 30000,
+                    Images = new List<Image>()
+                    {
+                        new Image()
+                        {
+                            Id =1,
+                            Name = "bmwM1000RRImage1.jfif",
+                            Category = 1
+                        },
+                         new Image()
+                        {
+                            Id =2,
+                            Name = "bmwM1000RRImage2.jfif",
+                            Category = 2
+                        },
+                          new Image()
+                        {
+                            Id =3,
+                            Name = "bmwM1000RRImage3.jfif",
+                            Category = 3
+                        },
+                           new Image()
+                        {
+                            Id =4,
+                            Name = "bmwM1000RRImage4.jfif",
+                            Category = 4
+                        }
+                    }
+                },
 
 
             };

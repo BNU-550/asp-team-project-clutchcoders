@@ -16,7 +16,7 @@ namespace ClutchCodersWebApp.Models
         public string Name { get; set; }
 
 
-        [Required]
+  
         public int ModelNo { get; set; }
 
 
