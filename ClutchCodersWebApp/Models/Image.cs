@@ -12,7 +12,7 @@ namespace ClutchCodersWebApp.Models
         public int Id { get; set; } 
 
 
-        [Required, StringLength(10)]
+        [Required, StringLength(25)]
         public string Name { get; set; }
 
 
