@@ -33,7 +33,52 @@ namespace ClutchCodersWebApp.Data
                 {
                     HouseNumber = "1",
                     Postcode = "HP5 A3Z"
+                },
+                new Address()
+                {
+                    HouseNumber = "2",
+                    Postcode = "FJ4 8AS"
                     //TODO: Add 10 addresses
+                },
+                new Address()
+                {
+                    HouseNumber = "3",
+                    Postcode = "BK9 3GN"
+                },
+                new Address()
+                {
+                    HouseNumber = "4",
+                    Postcode = "SG3 8FH"
+                },
+                new Address()
+                {
+                    HouseNumber = "5",
+                    Postcode = "EN9 0SA"
+                },
+                new Address()
+                {
+                    HouseNumber = "6",
+                    Postcode = "HD1 6DI"
+                },
+                new Address()
+                {
+                    HouseNumber = "7",
+                    Postcode = "IU3 8DS"
+                },
+                new Address()
+                {
+                    HouseNumber = "8",
+                    Postcode = "ID4 9SH"
+                },
+                new Address()
+                {
+                    HouseNumber = "9",
+                    Postcode = "MO6 2PS"
+                },
+                new Address()
+                {
+                    HouseNumber = "10",
+                    Postcode = "BE3 9NA"
                 }
             };
 
