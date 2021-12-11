@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ClutchCodersWebApp.Models
 {
-  
-    public class Admin
+
+    public class Person
     {
         [Key]
         public int Id { get; set; }
@@ -26,11 +23,23 @@ namespace ClutchCodersWebApp.Models
 
 
         [Required, StringLength(20)]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
 
-        [Required, StringLength(20)]
+        [Required, StringLength(20, MinimumLength = 2)]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        //Foreign key
+        public Nullable <int> PaymentCardId { get; set; }
+        public int AddressId { get; set; }
+
+
+        //Navigation property
+        public virtual PaymentCard PaymentCard { get; set; }
+        public virtual Address Address { get; set; }
+
 
     }
 }
