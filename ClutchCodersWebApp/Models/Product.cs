@@ -15,8 +15,7 @@ namespace ClutchCodersWebApp.Models
         [Required, StringLength(20)]
         public string Name { get; set; }
 
-
-  
+        //ModelNo might be unnecessary
         public int ModelNo { get; set; }
 
 

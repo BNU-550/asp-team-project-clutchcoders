@@ -14,10 +14,10 @@ namespace ClutchCodersWebApp.Data
 
             // Look for any students.
             // AddAddresses(context);
+            //AddPeople(context);
+            //AddPaymentCards(context);   
         }
-        //TODO: Add 10 payment cards
-        //TODO: Add 10 people and 2 staff
-        //TODO: Add 12 addresses
+   
         //TODO: Add call initialise method in the program class
 
         private static void AddPeople(ApplicationDbContext context)
