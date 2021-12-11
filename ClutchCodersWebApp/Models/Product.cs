@@ -43,12 +43,12 @@ namespace ClutchCodersWebApp.Models
         public string Dimensions { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Please enter a year between 1900 - 2025")]
         [Range(1900, 2025)]
         public int Year { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Please enter a price between £0 - £50000")]
         [Range(0, 50000)]
         public decimal Price { get; set; }
 
