@@ -12,11 +12,13 @@ namespace ClutchCodersWebApp.Models
         public int Id { get; set; }
 
 
-        [Required, StringLength(50)]
+        [Required(ErrorMessage = "Please enter your house number or house name")] 
+        [StringLength(50)]
         public string HouseNumber { get; set; }
 
 
-        [Required, StringLength(10)]
+        [Required(ErrorMessage = "Please enter your post code")]
+        [StringLength(10)]
         public string Postcode { get; set; }
 
     }
