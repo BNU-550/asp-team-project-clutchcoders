@@ -13,9 +13,11 @@ namespace ClutchCodersWebApp.Data
             context.Database.EnsureCreated();
 
             // Look for any students.
-            // AddAddresses(context);
-            //AddPeople(context);
-            //AddPaymentCards(context);   
+
+            AddPeople(context);
+
+            AddAddresses(context);
+            AddPaymentCards(context);   
         }
    
         //TODO: Add call initialise method in the program class
@@ -35,7 +37,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "davesmith1@gmail.com",
                     IsEmployee = false,
                     FirstName = "Dave",
-                    LastName = "Smith"
+                    LastName = "Smith",
+                    PaymentCardId = 1,
+                    AddressId = 1
                 },
                 new Person()
                 {
@@ -43,7 +47,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "johnwalker2@gmail.com",
                     IsEmployee = false,
                     FirstName = "John",
-                    LastName = "Walker"
+                    LastName = "Walker",
+                    PaymentCardId = 2,
+                    AddressId = 2
                 },
                 new Person()
                 {
@@ -51,7 +57,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "grahamfanta3@gmail.com",
                     IsEmployee = false,
                     FirstName = "Graham",
-                    LastName = "Fanta"
+                    LastName = "Fanta",
+                    PaymentCardId = 3,
+                    AddressId = 3
                 },
                 new Person()
                 {
@@ -59,7 +67,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "sharoncase4@gmail.com",
                     IsEmployee = false,
                     FirstName = "Sharon",
-                    LastName = "Case"
+                    LastName = "Case",
+                    PaymentCardId = 4,
+                    AddressId = 4
                 },
                 new Person()
                 {
@@ -67,7 +77,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "annabecker5@gmail.com",
                     IsEmployee = false,
                     FirstName = "Anna",
-                    LastName = "Becker"
+                    LastName = "Becker",
+                    PaymentCardId = 5,
+                    AddressId = 5
                 },
                 new Person()
                 {
@@ -75,7 +87,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "jakeprice6@gmail.com",
                     IsEmployee = false,
                     FirstName = "Jake",
-                    LastName = "Price"
+                    LastName = "Price",
+                    PaymentCardId = 6,
+                    AddressId = 6
                 },
                 new Person()
                 {
@@ -83,7 +97,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "vinnythread7@gmail.com",
                     IsEmployee = false,
                     FirstName = "Vinny",
-                    LastName = "Thread"
+                    LastName = "Thread",
+                    PaymentCardId = 7,
+                    AddressId = 7
                 },
                 new Person()
                 {
@@ -91,7 +107,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "mattdriver8@gmail.com",
                     IsEmployee = false,
                     FirstName = "Matt",
-                    LastName = "Driver"
+                    LastName = "Driver",
+                    PaymentCardId = 8,
+                    AddressId = 8
                 },
                 new Person()
                 {
@@ -99,7 +117,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "kateturton9@gmail.com",
                     IsEmployee = false,
                     FirstName = "Kate",
-                    LastName = "Turton"
+                    LastName = "Turton",
+                    PaymentCardId = 9,
+                    AddressId = 9
                 },
                 new Person()
                 {
@@ -107,7 +127,9 @@ namespace ClutchCodersWebApp.Data
                     Email = "sarahwalker0@gmail.com",
                     IsEmployee = false,
                     FirstName = "Sarah",
-                    LastName = "Walker"
+                    LastName = "Walker",
+                    PaymentCardId = 10,
+                    AddressId = 10
                 },
                 new Person()
                 {
@@ -115,7 +137,8 @@ namespace ClutchCodersWebApp.Data
                     Email = "harveystones@gmail.com",
                     IsEmployee = true,
                     FirstName = "Harvey",
-                    LastName = "Stone"
+                    LastName = "Stone",
+                    AddressId = 11
                 },
                 new Person()
                 {
@@ -123,13 +146,16 @@ namespace ClutchCodersWebApp.Data
                     Email = "corymuggles@gmail.com",
                     IsEmployee = true,
                     FirstName = "Cory",
-                    LastName = "Muggle"
+                    LastName = "Muggle",
+                    AddressId = 12
                 },
             };
             foreach (Person a in people)
             {
                 context.People.Add(a);
             }
+
+            context.SaveChanges(); 
         }
 
         private static void AddPaymentCards(ApplicationDbContext context)
@@ -226,6 +252,8 @@ namespace ClutchCodersWebApp.Data
             {
                 context.PaymentCards.Add(a);
             }
+
+            context.SaveChanges();
         }
 
         private static void AddAddresses(ApplicationDbContext context)

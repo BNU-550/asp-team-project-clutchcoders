@@ -9,7 +9,11 @@ namespace ClutchCodersWebApp.Models
     public class Image
     {
         [Key]
-        public int Id { get; set; } 
+        public int Id { get; set; }
+
+        public int ImageNumber { get; set; } 
+
+
 
 
         [Required, StringLength(25)]

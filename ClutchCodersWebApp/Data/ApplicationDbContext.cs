@@ -18,5 +18,7 @@ namespace ClutchCodersWebApp.Data
         public DbSet<Person> People { get; set; }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<Image> Images { get; set; }
     }
 }
