@@ -27,12 +27,5 @@ namespace ClutchCodersWebApp.Models
         [Required]
         public int Category { get; set; }
 
-
-        //
-        // PRODUCTID MAYBE REMOVE
-        //
-        [Required]
-        public int ProductId { get; set; }
-
     }
 }

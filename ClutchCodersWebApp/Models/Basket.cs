@@ -12,7 +12,6 @@ namespace ClutchCodersWebApp.Models
         public int Id { get; set; }
 
 
-        [Required]
         [DataType(DataType.Date)]
         //[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Order Date")]
