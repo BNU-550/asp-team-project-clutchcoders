@@ -12,8 +12,9 @@ namespace ClutchCodersWebApp.Data
         {
             context.Database.EnsureCreated();
 
-            // Look for any products.
-             AddProduct(context);
+            
+            // AddProduct(context);
+            // AddImage(context);
         }
         
         //TODO: Add call initialise method in the program class
@@ -139,170 +140,170 @@ namespace ClutchCodersWebApp.Data
 
         private static void AddImage(ApplicationDbContext context)
         {
-            if (context.Images.Any())
+            if (context.Photos.Any())
             {
                 return;   // DB has been seeded
             }
 
-            var images = new Image[]
+            var images = new Photo[]
                     {
-                        new Image()
+                        new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "bmwM1000RRImage1.jfif",
                             Category = 1,
                             ProductId = 8
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "bmwM1000RRImage2.jfif",
                             Category = 2,
                             ProductId = 8
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "bmwM1000RRImage3.jfif",
                             Category = 3,
                             ProductId = 8
                         },
-                           new Image()
+                           new Photo()
                         {
-                            ImageNumber =4,
+                            PhotoNumber =4,
                             Name = "bmwM1000RRImage4.jfif",
                             Category = 4,
                             ProductId = 8
                         },
-                        new Image()
+                        new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "bmwR18BImage1.jfif",
                             Category = 1,
                             ProductId =9
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "bmwR18BImage2.jfif",
                             Category = 2,
                             ProductId =9
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "bmwR18BImage3.jfif",
                             Category = 3,
                             ProductId =9
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "bmwR1250RImage1.jfif",
                             Category = 1,
                             ProductId =10
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "bmwR1250RImage2.jfif",
                             Category = 2,
                             ProductId =10
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "bmwR1250RImage3.jfif",
                             Category = 3,
                             ProductId =10
                         },
-                           new Image()
+                           new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "bmwR1250RTImage1.jfif",
                             Category = 1,
                             ProductId =11
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "bmwR1250RTImage2.jfif",
                             Category = 2,
                             ProductId =11
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "bmwR1250RTImage3.jfif",
                             Category = 3,
                             ProductId =11
                         },
-                            new Image()
+                            new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "HondaFuryImage1.jfif",
                             Category = 1,
                             ProductId =12
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "HondaFuryImage2.jfif",
                             Category = 2,
                             ProductId =12
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "HondaFuryImage3.jfif",
                             Category = 3,
                             ProductId =12
                         },
-                           new Image()
+                           new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "HondaNaviImage1.jfif",
                             Category = 1,
                             ProductId =13
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "HondaNaviImage2.jfif",
                             Category = 2,
                             ProductId =13
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "HondaNaviImage3.jfif",
                             Category = 3,
                             ProductId =13
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =4,
+                            PhotoNumber =4,
                             Name = "HondaNaviImage4.jfif",
                             Category = 4,
                             ProductId =13
                         },
-                           new Image()
+                           new Photo()
                         {
-                            ImageNumber =1,
+                            PhotoNumber =1,
                             Name = "DucatiDiavelImage1.jfif",
                             Category = 1,
                             ProductId =14
                         },
-                         new Image()
+                         new Photo()
                         {
-                            ImageNumber =2,
+                            PhotoNumber =2,
                             Name = "DucatiDiavelImage2.jfif",
                             Category = 2,
                             ProductId =14
                         },
-                          new Image()
+                          new Photo()
                         {
-                            ImageNumber =3,
+                            PhotoNumber =3,
                             Name = "DucatiDiavelImage3.jfif",
                             Category = 3,
                             ProductId =14
@@ -311,9 +312,9 @@ namespace ClutchCodersWebApp.Data
                     };
 
 
-            foreach (Image a in images)
+            foreach (Photo a in images)
             {
-                context.Images.Add(a);
+                context.Photos.Add(a);
             }
 
             context.SaveChanges();

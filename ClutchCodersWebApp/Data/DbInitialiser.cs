@@ -14,10 +14,9 @@ namespace ClutchCodersWebApp.Data
 
             // Look for any students.
 
-            AddPeople(context);
-
-            AddAddresses(context);
-            AddPaymentCards(context);   
+          //AddPeople(context);
+          //AddAddresses(context);
+          //AddPaymentCards(context);   
         }
    
         //TODO: Add call initialise method in the program class

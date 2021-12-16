@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClutchCodersWebApp.Models
 {
-    public class Image
+    public class Photo
     {
         [Key]
         public int Id { get; set; }
 
-        public int ImageNumber { get; set; } 
+        public int PhotoNumber { get; set; } 
 
-
+        public int ProductId { get; set; }
 
 
         [Required, StringLength(25)]

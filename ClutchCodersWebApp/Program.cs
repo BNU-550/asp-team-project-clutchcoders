@@ -30,7 +30,7 @@ namespace ClutchCodersWebApp
                 try
                 {
                     var context = services.GetRequiredService<ApplicationDbContext>();
-                    // context.Database.EnsureCreated();
+                    //context.Database.EnsureCreated();
                     DbInitialiser.Initialize(context);
                     ProductInitialiser.Initialize(context);
                 }
