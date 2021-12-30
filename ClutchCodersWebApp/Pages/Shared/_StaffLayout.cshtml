@@ -21,10 +21,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="Products/Index">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/MyAccount">My Account</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="Photos/Index">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="People/Index">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="Addresses/Index">Addresses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="PaymentCards/Index">Payment Cards</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -35,21 +44,19 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-            &copy;  <a asp-area="" asp-page="/People/Index">Staff Portal</a>
         </main>
     </div>
 
-    <div class="sidenav">
-        <a href="#">Search</a>
-        <a href="#">Catagories</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a asp-area="" asp-page="/People/Index">Staff Portal</a>
-    </div>
+    @*<div class="sidenav">
+        <a href="#">Products</a>
+        <a href="#">Photos</a>
+        <a href="#">People</a>
+        <a href="#">Addresses</a>
+    </div>*@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy;  <a asp-area="" asp-page="/People/Index">Staff Portal</a>
+            &copy;  <a asp-area="" asp-page="/About">About Us</a>
         </div>
     </footer>
 
