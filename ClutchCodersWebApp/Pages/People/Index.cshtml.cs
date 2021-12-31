@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ClutchCodersWebApp.Data;
 using ClutchCodersWebApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ClutchCodersWebApp.Pages.People
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly ClutchCodersWebApp.Data.ApplicationDbContext _context;
