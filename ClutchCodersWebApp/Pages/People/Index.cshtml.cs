@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ClutchCodersWebApp.Pages.People
 {
-    [Authorize]
+    [Authorize(Roles ="Staff")]
     public class IndexModel : PageModel
     {
         private readonly ClutchCodersWebApp.Data.ApplicationDbContext _context;
