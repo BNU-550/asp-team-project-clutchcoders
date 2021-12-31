@@ -14,12 +14,12 @@ namespace ClutchCodersWebApp.Data
 
             // Look for any students.
 
-          AddPeople(context);
-         
           AddAddresses(context);
-          AddPaymentCards(context);   
+          AddPaymentCards(context);
+
+          AddPeople(context);
         }
-   
+
         //TODO: Add call initialise method in the program class
 
         private static void AddPeople(ApplicationDbContext context)
