@@ -19,7 +19,7 @@ namespace ClutchCodersWebApp.Data
           //AddPaymentCards(context);   
         }
    
-        //TODO: Add call initialise method in the program class
+      
 
         private static void AddPeople(ApplicationDbContext context)
         {
