@@ -1,7 +1,14 @@
-﻿First staff registered: Harvey Stones  - Password: Stones11-
+﻿Two staff registered: Cory Muggles
+					 Kate Turton Kateturton-
 
 Add Issues
 Difficulty adding footer to staff layout page
 not sure which layout page is being used
 
 Derek's Staff1 password = "Bnu-CO550"
+
+To Do
+
+Index.cshml
+1) Take payment cards out from staff table
+2) Change format to edit, details and delete using bootstrap

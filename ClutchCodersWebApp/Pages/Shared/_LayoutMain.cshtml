@@ -46,29 +46,33 @@
     </header>
 
 
-  <div class="container">
-      <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
   <div class="sidenav">
       <div class="tempimg"> </div>
       <a asp-page="/Search">Search</a>
-      <a href="#">Catagories</a>
-      <a href="#">About Us</a>
+      <a asp-page ="/Browse">Browse</a>
+      <a asp-page ="/About">About Us</a>
       <a href="#">Contact</a>
       <a class="nav-link text-dark" asp-area="" asp-page="/People/Index">Staff Portal</a>
-
   </div>
 
 
+  <div class="container">
+      <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+   </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+      <div class = "main">
+        <div class="footer">
             &copy;  <a asp-area="" asp-page="/About">About Us</a>
+             <p>Kate Turton Project Manager | Matthew Driver Lead Programmer</p>
+              <p>Vincent Assolutissimamente 21905331</p>
         </div>
+      </div>
     </footer>
+   
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -76,4 +80,6 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
 </html>

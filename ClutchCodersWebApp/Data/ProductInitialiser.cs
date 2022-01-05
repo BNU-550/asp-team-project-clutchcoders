@@ -320,5 +320,38 @@ namespace ClutchCodersWebApp.Data
             context.SaveChanges();
 
         }
+
+        private static void AddOrder(ApplicationDbContext context)
+        {
+            if (context.Photos.Any())
+            {
+                return;   // DB has been seeded
+            }
+
+            var orders = new Order[]
+            {
+                new Order() {
+
+                    FullName = "Vinny Testing",
+                    PhoneNo = "99921001",
+                    Postcode = "HP13 4EE",
+                    OrderDate = DateTime.Now
+
+                },
+
+                new Order()
+                {
+                    FullName = "Adam Adam",
+                    PhoneNo = "223992929",
+                    Postcode = "LO2W EEE",
+                    OrderDate = DateTime.Now
+                }
+            };
+
+           foreach(Order O in orders)
+            {
+                context.Orders.Add(O);
+            }
+        }
     }
 }
