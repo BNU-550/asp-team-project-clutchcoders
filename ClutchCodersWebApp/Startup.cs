@@ -45,7 +45,7 @@ namespace ClutchCodersWebApp
             
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("RequireAdministratorRole", policy =>
+                options.AddPolicy("Staff", policy =>
                     policy.RequireRole("Staff"));
             });
         }
