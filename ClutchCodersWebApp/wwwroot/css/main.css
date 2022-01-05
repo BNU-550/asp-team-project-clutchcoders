@@ -34,6 +34,11 @@
     margin-left: 200px; /* Same as the width of the sidenav */
 }
 
+.footer{
+    margin-left:200px;
+   justify-content:center;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
