@@ -1,0 +1,11 @@
+﻿@page
+@model ClutchCodersWebApp.Pages.MyAccountModel
+@{
+}
+<h1>
+    @Model.Person.FirstName 
+    @Model.Person.LastName
+</h1>
+
+<partial name="People/_PeopleView" model="Model.Person" />
+<a class="btn btn-success" asp-page="People/edit" asp-route-id="Model.Person.PersonID"> Edit </a>
