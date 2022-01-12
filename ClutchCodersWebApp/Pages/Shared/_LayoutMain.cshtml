@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">ClutchCodersWebApp TestingMain</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">ClutchCodersWebApp</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,6 +28,9 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Browse">Browse</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/About">AboutUs</a>
@@ -46,7 +49,8 @@
     </header>
 
 
-
+<!--
+    COMMENTED OUT THE SIDEBAR BECAUSE IT KEEPS OVERLAPPING EVERYTHING
   <div class="sidenav">
       <div class="tempimg"> </div>
       <a asp-page="/Search">Search</a>
@@ -55,6 +59,7 @@
       <a href="#">Contact</a>
       <a class="nav-link text-dark" asp-area="" asp-page="/People/Index">Staff Portal</a>
   </div>
+-->
 
 
   <div class="container">
@@ -64,13 +69,10 @@
    </div>
 
     <footer class="border-top footer text-muted">
-      <div class = "main">
         <div class="footer">
             &copy;  <a asp-area="" asp-page="/About">About Us</a>
-             <p>Kate Turton Project Manager | Matthew Driver Lead Programmer</p>
-              <p>Vincent Assolutissimamente 21905331</p>
+             <p>Kate Turton Project Manager | Matthew Driver Lead Programmer | Vincent Assolutissimamente 21905331</p>
         </div>
-      </div>
     </footer>
    
 

@@ -31,11 +31,16 @@
     }
 
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
+   /* margin-left: 200px;  Same as the width of the sidenav */
+}
+
+#nav_bar .active {
+    color: #F8F8F8;
+    background-color: #4f81bd;
 }
 
 .footer{
-    margin-left:200px;
+    margin-left:auto;
    justify-content:center;
 }
 

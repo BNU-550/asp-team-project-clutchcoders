@@ -7,6 +7,11 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+#nav_bar .active {
+    color: #F8F8F8;
+    background-color: #4f81bd;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: red;
