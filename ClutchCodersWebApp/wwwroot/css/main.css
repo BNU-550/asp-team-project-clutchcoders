@@ -1,4 +1,5 @@
 ﻿body {
+   color: #aca9a9;
 }
 
  /*
@@ -97,4 +98,16 @@
     width: 150px;
 }
 
+
+.grid {
+    width:400px;
+    height: 800px;
+}
+
+    .grid.div {
+        width: 200px;
+        height: 200px;
+        outline: 1px solid;
+        float: left;
+    }
 
