@@ -13,8 +13,9 @@ namespace ClutchCodersWebApp.Data
             context.Database.EnsureCreated();
 
             
-            // AddProduct(context);
-            // AddImage(context);
+             AddProduct(context);
+             AddImage(context);
+             AddOrder(context);
         }
         
         //TODO: Add call initialise method in the program class
@@ -152,161 +153,161 @@ namespace ClutchCodersWebApp.Data
                             PhotoNumber =1,
                             Name = "bmwM1000RRImage1.jfif",
                             Category = 1,
-                            ProductId = 8
+                            ProductId = 1
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "bmwM1000RRImage2.jfif",
                             Category = 2,
-                            ProductId = 8
+                            ProductId = 1
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "bmwM1000RRImage3.jfif",
                             Category = 3,
-                            ProductId = 8
+                            ProductId = 1
                         },
                            new Photo()
                         {
                             PhotoNumber =4,
                             Name = "bmwM1000RRImage4.jfif",
                             Category = 4,
-                            ProductId = 8
+                            ProductId = 1
                         },
                         new Photo()
                         {
                             PhotoNumber =1,
                             Name = "bmwR18BImage1.jfif",
                             Category = 1,
-                            ProductId =9
+                            ProductId =2
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "bmwR18BImage2.jfif",
                             Category = 2,
-                            ProductId =9
+                            ProductId = 2
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "bmwR18BImage3.jfif",
                             Category = 3,
-                            ProductId =9
+                            ProductId = 2
                         },
                           new Photo()
                         {
                             PhotoNumber =1,
                             Name = "bmwR1250RImage1.jfif",
                             Category = 1,
-                            ProductId =10
+                            ProductId =3
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "bmwR1250RImage2.jfif",
                             Category = 2,
-                            ProductId =10
+                            ProductId =3
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "bmwR1250RImage3.jfif",
                             Category = 3,
-                            ProductId =10
+                            ProductId =3
                         },
                            new Photo()
                         {
                             PhotoNumber =1,
                             Name = "bmwR1250RTImage1.jfif",
                             Category = 1,
-                            ProductId =11
+                            ProductId =4
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "bmwR1250RTImage2.jfif",
                             Category = 2,
-                            ProductId =11
+                            ProductId =4
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "bmwR1250RTImage3.jfif",
                             Category = 3,
-                            ProductId =11
+                            ProductId =4
                         },
                             new Photo()
                         {
                             PhotoNumber =1,
                             Name = "HondaFuryImage1.jfif",
                             Category = 1,
-                            ProductId =12
+                            ProductId =5
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "HondaFuryImage2.jfif",
                             Category = 2,
-                            ProductId =12
+                            ProductId =5
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "HondaFuryImage3.jfif",
                             Category = 3,
-                            ProductId =12
+                            ProductId =5
                         },
                            new Photo()
                         {
                             PhotoNumber =1,
                             Name = "HondaNaviImage1.jfif",
                             Category = 1,
-                            ProductId =13
+                            ProductId =6
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "HondaNaviImage2.jfif",
                             Category = 2,
-                            ProductId =13
+                            ProductId =6
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "HondaNaviImage3.jfif",
                             Category = 3,
-                            ProductId =13
+                            ProductId =6
                         },
                           new Photo()
                         {
                             PhotoNumber =4,
                             Name = "HondaNaviImage4.jfif",
                             Category = 4,
-                            ProductId =13
+                            ProductId =6
                         },
                            new Photo()
                         {
                             PhotoNumber =1,
                             Name = "DucatiDiavelImage1.jfif",
                             Category = 1,
-                            ProductId =14
+                            ProductId =7
                         },
                          new Photo()
                         {
                             PhotoNumber =2,
                             Name = "DucatiDiavelImage2.jfif",
                             Category = 2,
-                            ProductId =14
+                            ProductId =7
                         },
                           new Photo()
                         {
                             PhotoNumber =3,
                             Name = "DucatiDiavelImage3.jfif",
                             Category = 3,
-                            ProductId =14
+                            ProductId =7
                         }
 
                     };
@@ -323,7 +324,7 @@ namespace ClutchCodersWebApp.Data
 
         private static void AddOrder(ApplicationDbContext context)
         {
-            if (context.Photos.Any())
+            if (context.Orders.Any())
             {
                 return;   // DB has been seeded
             }
@@ -352,6 +353,8 @@ namespace ClutchCodersWebApp.Data
             {
                 context.Orders.Add(O);
             }
+
+            context.SaveChanges();
         }
     }
 }
