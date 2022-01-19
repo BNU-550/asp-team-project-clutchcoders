@@ -1,0 +1,80 @@
+﻿@page
+@model ClutchCodersWebApp.Pages.ProductCRUD.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Product.Id" />
+            <div class="form-group">
+                <label asp-for="Product.Name" class="control-label"></label>
+                <input asp-for="Product.Name" class="form-control" />
+                <span asp-validation-for="Product.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.ModelNo" class="control-label"></label>
+                <input asp-for="Product.ModelNo" class="form-control" />
+                <span asp-validation-for="Product.ModelNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.EngineSize" class="control-label"></label>
+                <input asp-for="Product.EngineSize" class="form-control" />
+                <span asp-validation-for="Product.EngineSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Type" class="control-label"></label>
+                <input asp-for="Product.Type" class="form-control" />
+                <span asp-validation-for="Product.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Brand" class="control-label"></label>
+                <input asp-for="Product.Brand" class="form-control" />
+                <span asp-validation-for="Product.Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.FuelType" class="control-label"></label>
+                <input asp-for="Product.FuelType" class="form-control" />
+                <span asp-validation-for="Product.FuelType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.FuelCapacity" class="control-label"></label>
+                <input asp-for="Product.FuelCapacity" class="form-control" />
+                <span asp-validation-for="Product.FuelCapacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Dimensions" class="control-label"></label>
+                <input asp-for="Product.Dimensions" class="form-control" />
+                <span asp-validation-for="Product.Dimensions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Year" class="control-label"></label>
+                <input asp-for="Product.Year" class="form-control" />
+                <span asp-validation-for="Product.Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Price" class="control-label"></label>
+                <input asp-for="Product.Price" class="form-control" />
+                <span asp-validation-for="Product.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
